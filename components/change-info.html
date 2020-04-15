@@ -1,0 +1,63 @@
+<div class="col-sm-8 m-auto">
+  <div class="change-info">
+    <p class="title-change"> <b> Thay đổi thông tin cá nhân</b></p>
+  </div>
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item">
+      <a target="_self" class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Hình ảnh</a>
+    </li>
+    <li class="nav-item">
+      <a target="_self" class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Thông tin</a>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+      <div class="card" style="width: 18rem;">
+
+        <div class="card-body">
+          <h5 class="card-title">Đào Quang Tiến - PS08547</h5>
+          <img src="photo/avt.jpg" class="card-img-top" alt="...">
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+      <form>
+        <div class="row">
+          <div></div>
+          <div class="form-group col-6">
+            <label for="exampleInputEmail1">Họ tên</label>
+            <input type="text" ng-model="student.fullname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nhập mã nv">
+          </div>
+          <div class="form-group col-6">
+            <label for="exampleInputPassword1">Tài khoản</label>
+            <input type="text" ng-model="student.username" class="form-control" id="exampleInputPassword1" placeholder="Họ và tên">
+          </div>
+          <div class="form-group col-6">
+            <label for="exampleInputEmail1">Mật khẩu</label>
+            <input type="password" class="form-control" ng-model="student.email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+          </div>
+          <div class="form-group col-6">
+            <label for="exampleInputEmail1">Ngày sinh</label>
+            <input type="text" ng-model="student.birthday" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Địa chỉ">
+          </div>
+          <div class="form-group col-6">
+            <label for="exampleInputEmail1">Email</label>
+            <input type="email" class="form-control" ng-model="student.email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+          </div>
+          <div class="form-group col-6">
+            <label for="exampleInputEmail1">SchoolFee</label>
+            <input type="text" ng-model="student.schoolfee" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Địa chỉ">
+          </div>
+          <div class="form-group col-12">
+            <label for="exampleInputEmail1">Ghi chú</label>
+            <textarea class="form-control" rows="5" id="comment" placeholder="Nhập ghi chú - Nếu có"></textarea>
+          </div>
+          <div>
+            <button type="submit" class="btn btn-primary ml-1"><i class="far fa-address-card mr-1"></i> Chỉnh sửa</button>
+            <button type="submit" class="btn btn-secondary ml-1"><i class="fas fa-window-close mr-1"></i>Hủy</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

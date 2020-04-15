@@ -1,0 +1,169 @@
+.header
+{ 
+    width: 100%;
+    height: 500px;
+    background-size: 100% 100%;
+   
+}
+
+body{
+ 
+  font-size: 20px;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+footer{
+    background-color:#395656;
+}
+aside a {
+    color: black;
+}
+
+nav {
+    height: 50px;
+    background-color: brown;
+}
+nav #navbarSupportedContent ul li a:hover{
+    color: green;
+    background-image: url('');
+    border-bottom: 3px solid greenyellow;
+    transition: .3s;
+}
+
+nav #navbarSupportedContent ul li{
+ font-size: 20px;
+}
+
+aside #accordion .card-body ul li a:hover{
+    color: brown;
+    text-decoration: none;
+    border-bottom: 3px solid red;
+    transition: .3s;
+}
+
+@font-face {
+   font-family: 'Gibet';
+   src: url('fonts/glyphicons-halflings-regular.ttf');
+    }
+
+    
+input #formcontrol{
+    height: 50px;
+}
+
+.card-header{
+    background: #c1274b;
+    color: #d2c6b1;
+}
+
+
+
+
+nav {
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
+    margin-bottom: 8px;
+  }
+  nav ul {
+    list-style: none;
+    
+  }
+  nav ul li {
+    display: inline-block;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #aaa;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 10px;
+  }
+
+  nav ul li a,
+  nav ul li a:after,
+  nav ul li a:before {
+    transition: all .5s;
+  }
+
+  nav ul li a:hover {
+    color: #555;
+  }
+
+  nav.stroke ul li a,
+  nav.fill ul li a {
+    text-decoration: none;
+    position: relative;
+  }
+
+  nav.stroke ul li a:after, nav.fill ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #aaa;
+    height: 1px;
+  }
+
+nav.stroke ul li a:hover:after {
+    width: 100%;
+  }
+  nav.fill ul li a {
+    transition: all 2s;
+  }
+  nav.fill ul li a:after {
+    text-align: left;
+    content: '.';
+    margin: 0;
+    opacity: 0;
+  } 
+  nav.fill ul li a:hover {
+    color: #fff;
+    z-index: 1;
+  }
+  nav.fill ul li a:hover:after {
+    z-index: -10;
+    animation: fill 1s forwards;
+    -webkit-animation: fill 1s forwards;
+    -moz-animation: fill 1s forwards;
+    opacity: 1;
+  }
+  @-webkit-keyframes fill {
+    0% {
+      width: 0%;
+      height: 1px;
+    }
+    50% {
+      width: 100%;
+      height: 1px;
+    }
+    100% {
+      width: 100%;
+      height: 100%;
+      background: #333;
+    }
+  }
+  /* Circle */
+
+  .change-info{
+      padding-top: 10px;
+      box-shadow: 0 1px #5b5b44
+  }
+
+  .change-info .title-change{
+    font-size: 30px;
+    padding-top: 00px;
+    border-bottom: 3px solid #000 ;
+    color: #eebd05;
+    box-shadow: 0 1px #5b5b44
+}
+
+
+
+

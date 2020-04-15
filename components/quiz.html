@@ -1,0 +1,39 @@
+<div class="card">
+  <div class="card-header">
+    <label class="float-left"> </label>
+    <b>{{subjectName | uppercase}} | <i> Câu : {{index}}/{{quizs.length-1}}</i> <button type="button" class="btn btn-success float-right" style="height: 100%;" ng-click="">Thời gian làm bài : {{getTimeStr()}}</button>
+    </b></div>
+  <div class="card-body">
+    <div class="alert alert-primary" role="alert">
+      {{quiz.Text}}
+    </div>
+    <div class="form-check" ng-repeat="x in quiz.Answers">
+      <input class="form-check-input" type="radio" id="{{x.Id}}" ng-checked="answers[index]==x.Id" ng-click="selectAnswer(x.Id)">
+      <label class="form-check-label" for="{{x.Id}}">
+        {{x.Text}}
+      </label>
+    </div>
+
+  </div>
+  <div class="card-footer text-center">
+    <div class="row">
+      <div class="d-inline-block mx-auto">
+        <ul class="pagination">
+          <li class="page-item">
+            <button ng-click="firstQuiz()" class="page-link"><i class="fas fa-angle-double-left"></i></button>
+          </li>
+          <li class="page-item">
+            <button ng-click="prevQuiz()" class="page-link"><i class="fas fa-angle-left"></i></button>
+          </li>
+          <li class="page-item">
+            <button ng-click="nextQuiz()" class="page-link"><i class="fas fa-angle-right"></i></button>
+          </li>
+          <li class="page-item">
+            <button ng-click="lastQuiz()" class="page-link"><i class="fas fa-angle-double-right"></i></button>
+          </li>
+
+        </ul>
+      </div>
+      <button type="button" class="btn btn-success float-right" style="height: 100%;" ng-click="submitQuiz()">Kết thúc</button>
+    </div>
+  </div>
